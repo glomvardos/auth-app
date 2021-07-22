@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head />
-        <body>
+        <body className='h-screen flex items-center justify-center p-3'>
           <Main />
           <NextScript />
         </body>
