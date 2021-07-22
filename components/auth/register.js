@@ -1,7 +1,9 @@
+import Link from 'next/link'
 import Form from '../ui/form'
 import Logo from '../ui/logo'
 import Input from '../ui/input'
 import Button from '../ui/button'
+import SocialProfile from '../ui/social-profile'
 
 function Register() {
   return (
@@ -17,6 +19,22 @@ function Register() {
       <Input icon='/images/email.svg' type='email' placeholder='Email' />
       <Input icon='/images/lock.svg' type='password' placeholder='Password' />
       <Button text='Start coding now' />
+
+      <p className='font-normal text-sm mt-8 mb-6 text-center text-placeholders'>
+        or continue with these social profile
+      </p>
+      <div className='flex justify-center'>
+        <SocialProfile icon='/images/Google.svg' altText='Google' />
+        <SocialProfile icon='/images/Facebook.svg' altText='Facebook' />
+        <SocialProfile icon='/images/Twitter.svg' altText='Twitter' />
+        <SocialProfile icon='/images/Github.svg' altText='Github' />
+      </div>
+      <p className='font-normal text-sm text-center mt-7 text-placeholders'>
+        Already a member?
+        <Link href='/'>
+          <a className='text-btn ml-1'>Login</a>
+        </Link>
+      </p>
     </Form>
   )
 }
