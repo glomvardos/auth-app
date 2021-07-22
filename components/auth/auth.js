@@ -5,7 +5,7 @@ import Input from '../ui/input'
 import Button from '../ui/button'
 import SocialProfile from '../ui/social-profile'
 
-function Register() {
+function Auth() {
   return (
     <Form>
       <Logo />
@@ -39,4 +39,4 @@ function Register() {
   )
 }
 
-export default Register
+export default Auth

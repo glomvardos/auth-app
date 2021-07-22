@@ -1,5 +1,5 @@
-import Register from '../components/auth/register'
+import Auth from '../components/auth/auth'
 
 export default function Home() {
-  return <Register />
+  return <Auth />
 }
